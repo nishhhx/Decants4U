@@ -1,0 +1,98 @@
+/* Image Carousel in landing.html */
+
+/* The container box for left text, image carousel, and right text */
+.content {
+    display: flex;
+    padding-top: 50px;
+}
+
+/* The container box for image carousel */
+.middle-content {
+    width: 60%;
+}
+
+/* The container box for left and right text */
+.left-content,
+.right-content {
+    width: 15%;
+    padding: 50px 30px;
+}
+
+/* The text written in both left and right sections */
+#left-text,
+.right-text {
+    text-align: center;
+    color: #393E41;
+    font-size: 2.5vw;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* The image carousel */
+.img_carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* The images used in the image carousel */
+.img_carousel img {
+    width: 100%; 
+    height: 100%;
+    object-fit : cover;
+}
+
+/* The image container */
+.container {
+    display: none;
+    height: 100%;
+}
+
+/* Previous and Next image buttons in the image carousel */
+.back,
+.forward {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    border-radius: 0 2.5px 2.5px 0;
+    color: #C7AA74;
+    font-weight: bold;
+    font-size: 30px;
+    user-select: none;
+}
+
+/* Prioritized Next image button */
+.forward {
+    right: 0;
+    border-radius: 2.5px 0 0 2.5px;
+}
+
+/* Hovering over the back and forward button */
+.back:hover,
+.forward:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    ;
+}
+
+/* Navigational dots */
+.dot {
+    cursor: pointer;
+    height: 1vw;
+    width: 1vw;
+    z-index: 10;
+    border-radius: 50%;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Hovering over Navigational dots and when active */
+.active,
+.dot:hover {
+    background-color: #717171;
+}

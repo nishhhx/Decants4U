@@ -1,0 +1,269 @@
+/* Navbar properties when the screen width goes below 950px */
+@media screen and (max-width: 950px) {
+    /* except the first child, nothing else should be displayed */
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    /* right links should not be displayed */
+    .right-links a {
+        display: none;
+    }
+    /* Menu icon should be displayed */
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+    /* navbar when responsive */
+    .navbar.responsive {
+        position: relative;
+    }
+    /* icon when navbar is responsive */
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    /* links when navbar is responsive */
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    /* adjusted right links position */
+    .right-links {
+        position: relative;
+        top: 45px;
+        right: 80px;
+    }
+    /* adjusted search bars position */
+    .center-search {
+        position: absolute;
+        right: 40px;
+    }
+}
+
+/* about and contactus properties when the screen width goes below 1150px */
+@media screen and (max-width: 1150px) {
+    /* Making the left and right parts of the about section show in different rows */
+    .about_content {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 1.8vw;
+    }
+    /* adjusting the position of the left part of about section */
+    .left_about {
+        padding: 0;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    /* adjusting the position of the right part of about section */
+    .right_about {
+        margin: auto;
+        margin-bottom: 10%;
+        padding: 0;
+        width: 80%;
+    }
+    /* Image in the right about section */
+    .right_about img {
+        margin-bottom: 5%;
+    }
+    /* centering the table in the right about section */
+    .right_about table {
+        margin: auto;
+    }
+    /* contact form alignment */
+    #cont {
+        padding: 7% 0 3% 0;
+        width: 80%;
+        margin: auto;
+    }
+    /* centering the content of connect us section */
+    .connectus {
+        padding: 3% 0 3% 0;
+        margin: auto;
+    }
+    /* centering the content of connect us section */
+    .locateus {
+        padding: 3% 0 3% 0;
+        margin: auto;
+    }
+    /* centering and adjusting the about heading */
+    #about H1 {
+        font-size: 3.5vw;
+        text-align: center;
+        padding: 7% 0 3% 0;
+    }
+    /* Making all the parts of contact us section show in different rows */
+    #contactus {
+        display: block;
+        text-align: center;
+    }
+    /* Headings in the contact us section */
+    #contactus H2 {
+        padding: 7% 0 3% 0;
+        font-size: 3.5vw;
+    }
+    /* div with labels and input fields */
+    .label_input {
+        text-align: center;
+        width: 100%;
+    }
+    /* adjusting the width of labels in the contact form */
+    .label_input label {
+        width: 100px;
+        font-size: 15px;
+    }
+    /* adjusting the width of input fields in the contact form */
+    .contact_form input,
+    #cmessage {
+        width: 40%;
+    }
+    /* aligning the connect us section */
+    .connectus {
+        padding-bottom: 8%;
+    }
+    /* aligning the submit button for contact form */
+    #submit_btn {
+        margin: 80px 0px;
+        padding: 10px 0px;
+    }
+    /* adjusting dimensions of the map in the locate us part */
+    .locateus iframe {
+        width: 60%;
+        height: 500;
+        padding-bottom: 10%;
+    }
+}
+
+/* Buy Decants section when the screen width goes below 650px */
+@media screen and (max-width: 650px) {
+    /* Decants available heading */
+    #buy_decants h1 {
+        padding: 15% 0 10% 0;
+        font-size: 3.5vw;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    /* Making the individual cards show in different rows */
+    .cards {
+        display: block;
+        padding: 0 0 0 0;
+    }
+    /* text-size adjustment of product price */
+    .price {
+        font-size: 2vw;
+    }
+    /* text-size adjustment of product name in the card-container */
+    .card-container h2 {
+        font-size: 3vw;
+    }
+    /* alignment of the card-container */
+    .card-container {
+        width: 30%;
+        margin: auto;
+        margin-bottom: 10%;
+        font-size: 2vw;
+    }
+}
+
+/* Sell Decants page when the screen width goes below 950px */
+@media screen and (max-width: 950px) {
+    /* Alignment of the heading on the sell decants page */
+    .prodForm h1 {
+        padding: 15% 0 8% 0;
+        text-align: center;
+    }
+    /* Making the label_input and upload photo show in different rows */
+    .prod {
+        display: block;
+    }
+    /* Alignment of the product information form */
+    .information_form {
+        width: 60%;
+        margin-bottom: 15%; 
+    }
+    /* Alignment of the label_input div */
+    .label_input {
+        margin: 5% 0;
+    }
+    /* Alignment of the input fields and text areas */
+    .information_form input,
+    #pdetails,
+    #scontact_info {
+        margin-left: 10%; 
+    }
+    /* Alignment of the product photo */
+    .product_photo {
+        width: 50%;
+        text-align: center;
+    }
+    /* Centering the label in the upload photo part of this page */
+    .product_photo label {
+        text-align: center;
+    }
+    /* Centering the input field in the upload photo part of this page */
+    .product_photo input {
+        text-align: center;
+    }
+    /* Aignment of the upload and clear all buttons */
+    .ubuttons {
+        margin: 15% 0;
+    }
+    /* Centering the buttons */
+    .ubuttons #b1,
+    #b2 {
+        margin: auto;
+    }    
+}
+
+/* Description Page when the screen width goes below 950px */
+@media screen and (max-width: 950px) {
+    /* Making the product details and seller information appear in different rows */
+    .description_container {
+        display: block;
+        padding-bottom: 10%;
+    }
+    /* Centering the contents of the product info div */
+    .prod_info {
+        margin: auto;
+        width: 50%;
+        padding: 5% 0 7% 0;
+        text-align: center;
+    }
+    /* Text-size of the product name */
+    .prod_heading {
+        font-size: 3.5vw;
+    }
+    /* Text-size of the product price */
+    #prod_price {
+        font-size: 2.5vw;
+    }
+    /* Text-size of the product details */
+    #prod_details {
+        font-size: 2vw;
+    }
+    /* Adjusting the dimensions for the seller_info section */
+    #seller_info {
+        height: 40%;
+    }
+    /* Adjusting the dimensions for the button to toggle between seller_info section */
+    #seller_info_button {
+        width: 40%;
+        font-size: 1.8vw;
+        margin: 50px 50px;
+    }
+    /* Aligning the position of the back button */
+    #back {
+        padding: 10% 5% 0% 12%;
+    }
+    /* Text-size of the seller name and seller contact headings */
+    #sname, #scontact {
+        font-size: 3vw;
+    }
+    /* Text-size of the seller name placeholder and seller contact placeholder */
+    #sname_place, #scontact_place {
+        font-size: 2vw;
+    }
+}

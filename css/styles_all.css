@@ -1,0 +1,336 @@
+/* landing.html */
+
+/* Body properties that will be common among all pages */
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F6F6F2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Navbar section (common among all the pages) */
+
+/* Navbar properties that will be common among all pages */
+.navbar {
+    background-color: #333;    
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    z-index: 10;
+}
+
+/* Links in the Navbar */
+.navbar a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Brand logo (Decants4U) */
+.navbar #logo {
+    color: #C7AA74;
+}
+
+/* Properties when you hover over the links in the Navbar */
+.navbar a:hover {
+    color: #C7AA74;
+    border-bottom: 2px solid #C7AA74;
+}
+
+/* Left links on the navbar */
+.navbar .left-links {
+    flex: 1 1 200px;
+}
+
+/* Center section on the navbar */
+.navbar .center-search {
+    display: inline-block; 
+    padding: 14px;
+    text-align: center;
+}
+
+/* Input field for tahat search bar */
+.center-search input {
+    width: 80%;
+    border: 0.1px solid #413F3D;
+    transition: 0.5s;
+    border-radius: 0.2cm;
+    box-sizing: border-box;
+    padding: 3px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menu icon used in the navbar - responsive reasons */
+.navbar .icon {
+    display: none;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* About section of landing.html */
+
+/* About section container properties */
+.left_about img {
+    width: 100%;
+}
+
+/* About section */
+#about {
+    width: 100%;
+    font-size: 1.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Layout of the left and right parts of the about section */
+.about_content {
+    margin-top: 5%;
+    display: flex;
+}
+
+/* heading font size */
+#about H1 {
+    font-size: 3.5vw;
+    padding: 7% 0 3% 10%;
+}
+
+/* Left part of the about section */
+.left_about {
+    width: 40%;
+    padding: 0 0 3% 15%;
+}
+
+/* paragraph tag alignment */
+.left_about p {
+    margin-bottom: 50px;
+}
+
+/* Right part of the about section */
+.right_about {
+    width: 60%;
+    object-fit: cover;
+    padding: 0 0 3% 15%;
+}
+
+/* Table formatting */
+.right_about table {
+    margin-top: 40px;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* image in the right part of the about section */
+.right_about img {
+    width: 70%;
+}
+
+/* Table data and heading formatting */
+.right_about td,
+th {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Color the odd row of the table */
+.right_about tr:nth-child(odd) {
+    background-color: #F6F1D1;
+}
+
+/* Table heading formatting */
+.right_about th {
+    background-color: #C7AA74;
+    text-align: center;
+    color: #F6F6F2;
+}
+
+/* Properties when you hover over any table row */
+.right_about tr:hover {
+    background-color: #EABE7C;
+}
+
+.socials  {
+ justify-content: center;   
+ display: flex;
+ margin-top: 10%;
+ margin-bottom: 5%;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Contactus section of landing.html */
+
+/* Layout of the contact us part of the page */
+#contactus {
+    display: flex;
+    padding-bottom: 5%;
+    /* background-color: aqua; */
+}
+
+/* Heading tag in the contact us section */
+#contactus H2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    padding-bottom: 15px;
+    padding: 7% 0 3% 20%;
+}
+
+/* Layout of the contact form on the left side of this section */
+.contact_form {
+    /* padding: 7% 0 3% 20%; */
+    width: 100%;
+}
+
+/* The contact form */
+#contForm {
+    padding: 12% 0 3% 18%;
+}
+
+/* Labels in the contact form */
+.contact_form label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    display: inline-block;
+    width: 150px;
+    /* width: 100%; */
+    text-align: left;
+}
+
+/* div with labels and input field */
+.label_input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* To align the labels in the middle of the form input fields */
+.formfield * {
+    vertical-align: middle;
+}
+
+/* Input fields in the contact form */
+.contact_form input,
+#cmessage {
+    width: 60%;
+    border: 2px solid #555;
+    transition: 0.5s;
+    border-radius: 0.2cm;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    margin: 0px 0px 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Input fields when in focus */
+.contact_form input:focus,
+#cmessage:focus {
+    background-color: lightblue;
+    display: inline-flex;
+}
+
+/* submit button for the contact form */
+#submit_btn {
+    width: 150px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 80px 0px 80px 20%;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 1cm;
+}
+
+.submitted {
+    display: none;
+    color: white;
+    background-color: green;
+    padding: 10px;
+    margin-left: 5%; 
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.connectus {
+    padding: 3% 0 3% 20%;
+    margin: auto;
+}
+
+.locateus {
+    padding: 3% 0 3% 20%;
+    margin: auto;
+}
+
+/* Social media icons */
+#i1,
+#i2,
+#i3,
+#i4 {
+    color: #333;
+    padding: 0px 15px 25px 15px;
+}
+
+/* When you hover over social media icons */
+#i1:hover,
+#i2:hover,
+#i3:hover,
+#i4:hover {
+    color: #C7AA74;
+}
+
+/* Layout of the right part of this section */
+.connect_locate {
+    /* margin: 80px 0; */
+    /* padding: 7% 0 3% 10%; */
+    width: 100%;
+}
+
+/* Top button fixed at the bottom-right corner of the page */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    z-index: 99;
+    border: 3px solid #C7AA74;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.3vw;
+    font-weight: bolder;
+}
+
+/* Footer layout */
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+/* Horizontally aligning list items in the footer */
+ul.footer_links>li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+/* Formatting links in the footer */
+ul.footer_links>li>a {
+    color: white;
+    text-decoration: none;
+    display: inline;
+}
+
